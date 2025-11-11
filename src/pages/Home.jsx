@@ -30,7 +30,11 @@ export default function Home() {
     { img: githubLogo, title: 'GitHub', link: 'https://github.com/Ravishyamsingh' },
     { img: linkedinLogo, title: 'LinkedIn', link: 'https://www.linkedin.com/in/ravi-shyam-singh-790273367/' },
     { img: gmailLogo, title: 'Email', link: 'mailto:rshyamsingh106@gmail.com' },
-  { img: whatsappLogo, title: 'WhatsApp', link: 'https://wa.me/918102001624' },
+    {
+      img: whatsappLogo,
+      title: 'WhatsApp',
+      link: 'https://wa.me/918102001624?text=Hello%20Ravi%2C%20I%20just%20visited%20your%20portfolio!'
+    },
     { img: instagramLogo, title: 'Instagram', link: 'https://www.instagram.com/ravishyam_singh/' },
     { img: facebookLogo, title: 'Facebook', link: 'https://www.facebook.com/profile.php?id=61554401687807' },
   ]
