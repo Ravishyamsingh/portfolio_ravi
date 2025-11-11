@@ -40,16 +40,22 @@ export default function Contact() {
 
     setStatus("Sending...");
 
+    const templateParams = {
+      name: form.name,
+      contact: form.contact,
+      subject: form.subject,
+      message: form.message,
+    };
+
+    if (isEmail) {
+      templateParams.reply_to = form.contact;
+    }
+
     emailjs
       .send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          contact_info: form.contact,
-          subject: form.subject,
-          message: form.message,
-        },
+        templateParams,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
