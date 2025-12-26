@@ -5,6 +5,20 @@ import { motion, AnimatePresence } from "framer-motion";
 const CERTS = {
   tech: [
     {
+      title: "Google for Startups: Prompt to Prototype",
+      org: "Google",
+      date: "2025",
+      img: "/certs/Google for Startups-Prompt to Prototype.jpg",
+      link: "/certs/Google for Startups-Prompt to Prototype.jpg",
+    },
+    {
+      title: "5-Day AI Agents Intensive Course with Google",
+      org: "Google",
+      date: "2025",
+      img: "/certs/5-Day AI Agents Intensive Course with Google.png",
+      link: "/certs/5-Day AI Agents Intensive Course with Google.png",
+    },
+    {
       title: "Solutions Architecture Job Simulation",
       org: "AWS",
       date: "2024",
