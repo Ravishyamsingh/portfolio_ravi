@@ -4,6 +4,14 @@ import { Github, ExternalLink } from 'lucide-react'
 
 const PROJECTS = [
   {
+    title: '🏢 Bharat Bhushan Interiors',
+    desc: 'Production interior-design and commercial-furniture website with responsive product galleries, dynamic catalogue pages, EmailJS enquiries, and Cloudflare edge deployment.',
+    ss: '/interior-design.png',
+    tech: ['HTML5', 'CSS3', 'JavaScript', 'EmailJS', 'Cloudflare Workers'],
+    live: 'https://bharatbhushancompany.com/',
+    code: 'https://github.com/Ravishyamsingh/interior-design'
+  },
+  {
     title: '🩸 Blood Bank Management System',
     desc: 'Role-based Django platform for donors, staff, and admins with SMTP alerts, inventory dashboards, and ORM-backed audit trails.',
     ss: '/blood.png',
@@ -12,12 +20,28 @@ const PROJECTS = [
     code: 'https://github.com/Ravishyamsingh/Online-blood-donation'
   },
   {
-    title: '🤝 Syncspace Collaborative Platform',
-    desc: 'Realtime collaboration hub serving 100+ users with optimistic UI, Socket.IO messaging, and JWT-secured APIs backed by audit logs.',
-    ss: '/sync.png',
-    tech: ['React', 'TypeScript', 'Node.js', 'Socket.IO', 'MySQL', 'Redis'],
-    live: '#',
+    title: '🤖 SyncSpace — Multi-Agent AI Workspace',
+    desc: 'Full-stack AI workspace that turns manager-created tasks into live multi-agent workflows and downloadable reports, with realtime monitoring, RAG orchestration, audit logs, and admin controls.',
+    ss: '/syncspace-ai-workspace.png',
+    tech: ['React', 'Node.js', 'FastAPI', 'PostgreSQL', 'LangGraph', 'RAG'],
+    live: 'https://syncspace-neon.vercel.app/',
     code: 'https://github.com/Ravishyamsingh/syncspace'
+  },
+  {
+    title: '🏋️ Smart Gym Access & Management Platform',
+    desc: 'PWA-style gym platform with browser-based face recognition, Firebase role-based access, automated attendance, and full-stack membership management.',
+    ss: '/olympia-fitness.png',
+    tech: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'Firebase', 'TensorFlow.js'],
+    live: 'https://olympia-fitness.netlify.app/',
+    code: 'https://github.com/Ravishyamsingh/gym-web'
+  },
+  {
+    title: '🎵 Echo — AI-Powered Album Library',
+    desc: 'Full-stack personal music library for private album collections, ratings, notes, analytics, and AI-generated listening insights and soundtracks.',
+    ss: '/echo-album-library.png',
+    tech: ['Next.js', 'TypeScript', 'Spring Boot', 'PostgreSQL', 'Groq AI', 'JWT'],
+    live: 'https://my-music-five-pi.vercel.app/',
+    code: 'https://github.com/Ravishyamsingh/my-music'
   },
   {
     title: '🔐 Virtual Lab – Cryptography Learning Platform',
