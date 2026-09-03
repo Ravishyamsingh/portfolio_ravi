@@ -4,34 +4,6 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "./Gallery.css";
 
 const IMAGES = {
-  personal: [
-    {
-      id: 1,
-      caption:
-        "Surrounded by mountains 🏔️, wrapped in greenery 🌿, and guided by nature ✨ — that's where I found my peace.",
-      photos: [
-        "/gallery/nature (1).jpg",
-        "/gallery/nature (2).jpg",
-        "/gallery/nature (3).jpg",
-        "/gallery/nature (4).jpg",
-        "/gallery/nature (5).jpg",
-        "/gallery/nature (6).jpg",
-        "/gallery/nature (7).jpg",
-      ],
-    },
-    {
-      id: 2,
-      caption:
-        "Nature 🌄, good friends 🤝, and a trip that helped us discover better versions of ourselves ✨.",
-      photos: [
-        "/gallery/personal (1).jpg",
-        "/gallery/personal (2).jpg",
-        "/gallery/personal (3).jpg",
-        "/gallery/personal (4).jpg",
-        "/gallery/personal (5).jpg",
-      ],
-    },
-  ],
   projects: [
     {
       id: 1,
@@ -92,7 +64,7 @@ const tabContentVariants = {
 };
 
 export default function Gallery() {
-  const [tab, setTab] = useState("personal");
+  const [tab, setTab] = useState("projects");
   const [zoom, setZoom] = useState({ img: null, post: null, index: 0 });
 
   const openZoom = (post, index) =>
@@ -128,7 +100,7 @@ export default function Gallery() {
 
       {/* 🧭 Tabs */}
       <motion.div className="tab-buttons" variants={childVariants}>
-        {["personal", "projects", "achievements"].map((type) => (
+        {["projects", "achievements"].map((type) => (
           <motion.button
             key={type}
             className={`tab ${tab === type ? "active" : ""}`}

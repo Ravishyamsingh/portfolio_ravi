@@ -4,29 +4,50 @@ import "./Skills.css";
 
 const SKILLS = [
   { name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
   { name: "TypeScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
   { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
   { name: "SQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
   { name: "C++", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+  { name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Next.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
   { name: "Flask", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
+  { name: "FastAPI", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+  { name: "Spring Boot", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+  { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
   { name: "Vite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" },
   { name: "Tailwind", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+  { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "Firebase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+  { name: "Redis", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
   { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
   { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
   { name: "Redux", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
   { name: "Express", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+  { name: "TensorFlow", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
   { name: "Socket.IO", logo: "https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" },
 ];
 
 const ROWS = [
   [
-    { title: "Programming Languages", items: ["Java", "TypeScript", "Python", "SQL", "C++"] },
-    { title: "Frameworks & Platforms", items: ["React", "Flask", "Vite", "Express", "Tailwind CSS"] },
-    { title: "Tools & DevOps", items: ["Docker", "CI/CD", "Git & GitHub", "Socket.IO"] },
-    { title: "Libraries & Patterns", items: ["React Router", "Zustand / Redux", "Axios", "Flask-JWT-Extended", "Flask-SocketIO"] },
+    { title: "Programming Languages", items: ["Java", "JavaScript", "TypeScript", "Python", "SQL", "C++", "HTML5", "CSS3"] },
+    { title: "Frontend Engineering", items: ["React", "Next.js", "Vite", "Tailwind CSS", "Redux", "React Router", "Framer Motion"] },
+    { title: "Backend & APIs", items: ["Node.js", "Express", "FastAPI", "Flask", "Spring Boot", "REST APIs", "Socket.IO"] },
+    { title: "Data & Cloud", items: ["PostgreSQL", "MySQL", "MongoDB", "Firebase", "Redis", "pgvector", "Cloudflare Workers"] },
   ],
   [
+    {
+      title: "AI & Intelligent Systems",
+      items: ["LangGraph", "RAG pipelines", "Hugging Face inference", "Groq AI", "Multi-agent workflows", "TensorFlow.js"],
+    },
+    {
+      title: "Tools & Deployment",
+      items: ["Git & GitHub", "Docker", "Vercel", "Netlify", "Cloudflare", "EmailJS", "Postman"],
+    },
     {
       title: "Core Strengths",
       items: [
@@ -113,7 +134,7 @@ export default function Skills() {
         transition={{ duration: 1.2, ease: "easeOut" }}
         style={{
           width: "100%",
-          height: "550px",
+          height: "650px",
           borderRadius: "25px",
           background: "radial-gradient(circle at 50% 50%, #0a0a0a, #101010)",
           overflow: "hidden",
@@ -134,8 +155,8 @@ export default function Skills() {
               background: "rgba(0,255,255,0.12)",
             }}
             style={{
-              width: "110px",
-              height: "110px",
+              width: "76px",
+              height: "76px",
               borderRadius: "50%",
               position: "absolute",
               display: "flex",
@@ -153,8 +174,8 @@ export default function Skills() {
               src={s.logo}
               alt={s.name}
               style={{
-                width: "50px",
-                height: "50px",
+                width: "34px",
+                height: "34px",
                 objectFit: "contain",
                 filter: "drop-shadow(0 0 8px rgba(0,255,255,0.4)) brightness(1.2)",
                 marginBottom: "5px",
@@ -168,7 +189,7 @@ export default function Skills() {
             <span
               style={{
                 color: "rgba(180,255,255,0.9)",
-                fontSize: "13px",
+                fontSize: "10px",
                 fontWeight: 500,
                 letterSpacing: "0.3px",
               }}

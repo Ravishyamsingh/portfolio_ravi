@@ -21,6 +21,7 @@ export default function Home() {
   const professions = [
     'Full Stack Developer',
     'Java Engineer',
+    'AI Engineer',
     'Realtime Platform Builder',
     'AI & ML Enthusiast',
     'Problem Solver',
@@ -237,7 +238,7 @@ export default function Home() {
               maxWidth: '95%',
             }}
           >
-          Full Stack Developer | Java Specialist | AI Collaborator
+          Full Stack Developer | Software Engineer | AI Engineer
           </p>
 
           {/* --- Profession Tags --- */}
